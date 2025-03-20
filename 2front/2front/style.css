@@ -1,0 +1,76 @@
+/* Reset básico para remover margens e bordas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página com fundo escuro */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #ddd; /* Texto claro */
+    line-height: 1.6;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Título principal com efeito escuro e cores contrastantes */
+h1 {
+    font-size: 2.5rem;
+    color: #ff6347; /* Cor laranja-avermelhada */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para dar efeito */
+}
+
+/* Parágrafos gerais */
+p {
+    font-size: 1.2rem;
+    color: #bbb; /* Texto mais suave */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra suave para o texto */
+    max-width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Div que vai conter os parágrafos dinâmicos */
+#conteudo {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1e1e1e; /* Fundo escuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra forte */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo para os parágrafos que são adicionados dinamicamente */
+#conteudo p {
+    background-color: #333; /* Fundo mais escuro */
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #eee; /* Texto claro para contraste */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease; /* Efeito de transição */
+
+}
+
+/* Efeito de hover para parágrafos */
+#conteudo p:hover {
+    background-color: #444; /* Leve mudança de cor ao passar o mouse */
+    transform: translateY(-3px); /* Levanta o elemento ao passar o mouse */
+}
+
+/* Adicionando borda suave no hover do título */
+h1:hover {
+    color: #ff4500; /* Mudança de cor para um laranja mais intenso */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Sombra mais intensa */
+}
+
+
+
